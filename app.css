@@ -1,0 +1,25 @@
+html,
+body {
+    height: 100%;
+    background: #2CB7ED;
+    color: white;
+}
+
+[ng-view].main-view {
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    height: 90%;
+}
+
+i.space-seat-logo {
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    width: 100px;
+    display: inline-block;
+    background-size: contain;
+    height: 52px;
+}
+
+.center {
+    text-align: center;
+}

@@ -1,0 +1,36 @@
+<div class="train">
+
+    <h4 class="select-train-header">
+        Select a train
+    </h4>
+    <div class="trains-wrapper">
+        <div class="train"
+             ng-repeat="train in trains"
+             ng-click="selectTrain(train)"
+             ng-style="getSelectedTrainStyle(train)"
+             ng-class="{'selected': isTrainSelected(train)}">
+            <span class="dot" ng-style="getTrainStyle(train)"></span>
+        </div>
+    </div>
+
+    <div class="waiting-for-a-train" ng-show="loading">
+        Waiting for a train..
+    </div>
+
+    <div class="cabin-pointer-wrapper" ng-hide="loading">
+        <div class="cabin-pointer" id="cabin-pointer"></div>
+        <div class="cabin-number" ng-show="selectedTrain">
+            <div class="label">
+                Platform
+            </div>
+            <div class="platform-number">
+                {{ platformNumber }}
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+        <i class="space-seat-logo"></i>
+    </div>
+
+</div>
