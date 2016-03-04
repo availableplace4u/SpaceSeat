@@ -76,7 +76,7 @@ angular.module('myApp.train', ['ngRoute'])
                 $timeout(function () {
                     pointerElem.style.transform = 'rotate(' + deg + 'deg)';
                 }, 100);
-            }, 2000);
+            }, 8000);
 
         };
 
